@@ -10,7 +10,12 @@
 ### Skills Practiced
 * HTML
 * CSS
-* 
+* External links
+* Flexbox
+* Anchor tags
+* Media Queries
+* Fixed nav bar
+* Viewport units
 
 ### Description
 This website is a programmer portfolio page, done as code practice. The user stories and test suite were created by Free Code Camp.

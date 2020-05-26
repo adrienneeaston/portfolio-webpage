@@ -1,19 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 }
 
-main, footer {
-  margin: 0 auto;
-  width: 80%;
-  outline: solid red;
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-#navbar {
+main, footer, #navbar{
+  margin: 0 auto;
+  width: 80%;
+}
+
+header {
   background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
 }
+
+/* #navbar {
+
+} */
 
 #navbar a {
   color: whitesmoke;
@@ -26,19 +39,59 @@ article, #welcome-section, #aboutme, footer {
   margin: 25px auto;
   padding: 30px;
   background: whitesmoke;
+  outline: black solid;
+}
+
+article {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 footer {
-  padding: 30px 0;
+  padding: 30px;
 
 }
 
 #projects {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  /* text-align: center; */
 }
 
-.projects-tile {
-  flex-grow: 1;
+.project-tile {
+  flex-basis: 30%;
+}
+
+@media (max-width: 1000px) {
+  #projects {
+    flex-direction: column;
+  }
+}
+
+#welcome-section {
+  height: 100vh; 
+  font-size: 20px; 
+  margin: 0px; 
+  padding-top: 200px;                  
+  margin: 0px;          
+  background-color: rgb(7, 7, 75); 
+  text-align: center; 
+  color:white; 
+  outline: black solid;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#projects a, footer a {
+  font-size: 20px;
+}
+
+#welcome-section h3 {
+  font-size: 30px;
 }
